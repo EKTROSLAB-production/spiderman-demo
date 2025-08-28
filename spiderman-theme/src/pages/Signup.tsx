@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Signup: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -165,9 +166,9 @@ const Signup: React.FC = () => {
             <div className="mt-6 text-center">
               <p className="text-gray-600">
                 Already have an account?{' '}
-                <a href="/login" className="text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200">
+                <Link to="/login" className="text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200">
                   Sign in here
-                </a>
+                </Link>
               </p>
             </div>
 
